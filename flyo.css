@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    position: fixed;
+    bottom: 0px;
+    z-index: -1;
+    height: 350px;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+
+ 
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.progress{
+    width: 100%;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1em;
+    overflow: hidden;
+    height: 6px;
+}
+
+.progress_bar{
+    width: 80%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+}
+
+.fylo{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px 60px 20px 20px;
+    border-radius: 1em 8em 1em 1em;  
+    gap: 40px;
+}
+
+.size{
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px;
+    border-radius: 0.5em;
+    width: 280px;
+}
+
+.file{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 40px;
+    
+}
+
+.document{
+    background-color: hsl(229, 57%, 11%);
+    width: 1.5em;
+    padding: 8px;
+    border-radius: 0.5em;
+}
+
+.folder{
+    background-color: hsl(229, 57%, 11%);
+    width: 1.8em;
+    padding: 9px;
+    border-radius: 0.5em;
+}
+
+.upload{
+    background-color: hsl(229, 57%, 11%);
+    width: 2em;
+    height: 1.5em;
+    padding: 9px;
+    border-radius: 0.5em;
+    
+}
+
+h1{
+    color: hsl(243, 100%, 93%);
+    font-weight: 200;
+    font-size: 0.6em;
+    padding-bottom: 1em;
+}
+
+strong{
+    font-size: 0.9em;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    position: relative;
+    height: auto;
+    background-color: hsl(243, 100%, 93%);
+    margin: 10px auto;
+    padding: 15px;
+    width: 120px;
+    box-sizing: border-box;
+    left: 260px;
+    top: 230px;
+    border-radius: 0.5em;
+}
+
+.box:after{
+    position: absolute;
+    background-color: hsl(243, 100%, 93%);
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid black;
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-right: 1px solid black;
+    top: 100%;
+    right: 3%;
+    /* margin-left: -25px; */
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -8px;
+
+}
+
+.box p{
+    font-size: 0.5em;
+    color: hsl(229, 7%, 55%);
+    
+}
+
+.box h2{
+    font-size: 1.5em;
+    
+}
+
+.content{
+    color: hsl(243, 100%, 93%);
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+}
+
+.content h4, h3{
+    font-weight: 1;
+    font-size: 0.6em;
+}
+
+
+@media screen and (max-width: 700px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .progress {
+        height: 10px;
+        
+    }
+
+    .box {
+        left: 0;
+        top: 450px;
+        height: 50px;
+    }
+
+    .box p{
+        font-size: 0.7em;
+        color: hsl(229, 7%, 55%);
+        font-weight: 1;
+        
+    }
+
+    .size{
+        width: 200px;
+        height: 80px;
+    }
+
+    .fylo{
+        width: 170px;
+    }
+
+    .content{
+        gap: 140px;
+        padding-top: 0.6em;
+    }
+
+    .size h1{
+        padding-bottom: 1.5em;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .box:after{
+        display: none;
+    }
+
+
+
+
+    
+
+}
