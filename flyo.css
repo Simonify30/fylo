@@ -106,7 +106,7 @@ section{
     
 }
 
-h1{
+.size h1{
     color: hsl(243, 100%, 93%);
     font-weight: 200;
     font-size: 0.6em;
@@ -173,7 +173,7 @@ strong{
     gap: 220px;
 }
 
-.content h4, h3{
+.content h1, h2{
     font-weight: 1;
     font-size: 0.6em;
 }
